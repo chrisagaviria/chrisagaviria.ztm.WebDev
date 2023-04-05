@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>Startup</title>
+
+    <!-- Required meta tags for make website responsive for mobile devices as well -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <!-- Note that the below Bootstrap file is a specific version. If you grab the most
+    current from Bootstrap website, you will see the button grow transition being a lot faster
+    than in my video.  Use whichever style sheet you like best! -->
+    <!-- Bootstrap CSS from a CDN. This way you don't have to include the bootstrap file yourself -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">   
+
+    <!-- My own stylesheet -->
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <!-- To place the information in the center of the page we are using flex from boostrap. We use d-flex. https://getbootstrap.com/docs/4.0/utilities/flex/ -->
+    <!-- The align-items-center comes from the same website -->
+    <!-- Needed h-100 which is height of 100% for bootstrap to know we want to use the complete page since the div, by default, only takes up the top portion. Now with h-100 d-flex and align-items-center work as they should and have the content centered based on the COMPLETE page and not div -->
+
+    <div class="container d-flex align-items-center h-100">
+
+      <!-- We wanted to have the h1, hr, & button in one row in the center of the page so we did another div followed by a class called row -->
+
+      <div class="row">
+
+        <!-- Now we want to divide the h1, hr, & button into different sections -->
+        <!-- The class text-center is from bootstrap -->
+        <!-- Needed to add col-12 so the header can contain the full space of the container -->
+
+        <header class="text-center col-12">
+
+          <!-- class is part of bootstrap -->
+          <h1 class="text-uppercase"><strong>The biggest startup event of the year</strong></h1>
+
+        </header>
+
+        <!-- Just to provide a space between the text and horizontal line -->
+
+        <div class="buffer col-12"></div>
+
+        <section class="text-center col-12">
+
+          <!-- This means horizontal line -->
+          <hr>
+
+        </section>
+
+        <footer class="text-center">
+
+          <!-- I created a landing page using https://us21.admin.mailchimp.com/landing-pages/finished-published?id=8662&previously_published=  -->
+          <a href="https://mailchi.mp/47ebee4e40d3/startup">
+            <!-- Classes obtained from https://getbootstrap.com/docs/4.0/components/buttons/  except for btn-xl-->
+
+            <button class="btn btn-primary btn-xl">Find out more</button>
+          </a>
+        </footer>
+
+        </div>
+      </div>
+  </body>
+</html>
